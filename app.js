@@ -21,6 +21,7 @@ function giveMeFiles(dir) {
     const json = JSON.parse(fileData)
     const string = JSON.stringify(json)
     const rexpr = /(["]+[n]+[a]+[m]+[e]+["]+[:])(.*?)(?=,)/
+    //(?<="name":").*?(?=")
 
     const result = string.match(rexpr)
     console.log(string)
