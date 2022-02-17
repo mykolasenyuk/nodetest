@@ -23,7 +23,8 @@ function giveMeFiles(dir) {
     // const rexpr = 'nodetest'
 
     console.log(json.name)
-    console.log(string.replace(json.name, 'nodetest Mykola'))
+    // console.log(string.replace(json.name, 'nodetest Mykola'))
+    console.log(JSON.parse(string.replace(json.name, 'nodetest Mykola')))
   })
 }
 
