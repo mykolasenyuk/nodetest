@@ -20,10 +20,10 @@ function giveMeFiles(dir) {
 
     const json = JSON.parse(fileData)
     const string = JSON.stringify(json)
-    const rexpr = 'nodetest'
+    // const rexpr = 'nodetest'
 
-    console.log(string.match(rexpr))
-    console.log(string.replace(/nodetest/gi, 'nodetest Mykola'))
+    console.log(json.name)
+    console.log(string.replace(json.name, 'nodetest Mykola'))
   })
 }
 
