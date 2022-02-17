@@ -20,7 +20,7 @@ function giveMeFiles(dir) {
 
     const json = JSON.parse(fileData)
     const string = JSON.stringify(json)
-    const rexpr = /["]+[n]+[a]+[m]+[e]+["]+[:]+["]+[a-z]+["]/
+    const rexpr = /["]+[n]+[a]+[m]+[e]+["]+[:]+["]+[0-9a-zA-Zа-яёА-ЯЁ\w\s]+["]/
 
     // let regexp = /\w+/g
     // console.log(regexp)
