@@ -20,17 +20,13 @@ function giveMeFiles(dir) {
 
     const json = JSON.parse(fileData)
     const string = JSON.stringify(json)
-    const rexpr = /["]+[n]+[a]+[m]+[e]+["]+[:]+["]+[0-9a-zA-Zа-яёА-ЯЁ\w\s]+["]/
-
-    // let regexp = /\w+/g
-    // console.log(regexp)
-    // regexp.lastIndex = 9
-    // const word = regexp.exec(string)
-    // console.log(word)
+    const rexpr = /(["]+[n]+[a]+[m]+[e]+["]+[:])(.*?)(?=,)/
 
     const result = string.match(rexpr)
-    console.log(result)
-    console.log(string.replace(rexpr, "'name': 'Mykola'"))
+    console.log(string)
+    const value = string.replace(rexpr, '"name": "Mykola"')
+    const newObj = JSON.parse(value)
+    console.log(newObj)
   })
 }
 
