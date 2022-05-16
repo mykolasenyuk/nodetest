@@ -1,4 +1,4 @@
-task1
+Task1
 
 Write a console script that could open and find all \*.json files in the current project folder, including the node_modules folder and its subfolders,
 
